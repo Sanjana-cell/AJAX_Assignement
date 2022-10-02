@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Loading...</h1>
+    <script>
+        let j=1;
+        function isLetterPresent(){
+
+
+        }
+        while(j<=3){
+            var guessLetter=prompt();
+            var letterArray =["a","b","d","z","y","f","i","k"];
+            for (let i=0; i<letterArray.length; i++){
+                 if(letterArray[i] === guessLetter){
+                    console.log( guessLetter + "You Won");
+                    break
+                }
+                console.log("You Lost");
+            }
+            j+=1;
+        }
+        if(j>3){
+            document.getElementById("heading").innerHTML = "You have exhausted the attempts";
+        }
+    </script>
+
+</body>
+</html>
