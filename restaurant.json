@@ -1,0 +1,24 @@
+{
+    "restaurants" : [{
+        "name": "yellow chilli",
+        "address": "new delhi",
+        "lat": "47.608940",
+        "lng": "-122.340141",
+        "type":"sitdown"
+    },
+    {
+       "name": "red chilli",
+       "address": "Bangalore",
+       "lat": "47.608940",
+       "lng": "-122.340141",
+       "type": "bar"
+    },
+    {
+        "name": "KFC",
+        "address": "Mumbai",
+        "lat": "47.608940",
+        "lng": "-122.340141",
+        "type": "sitdown"
+    }
+    ]
+}
