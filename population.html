@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="country">
+    <input type="submit" value="getPopulation" onclick="getPopulation(document.getElementById('country').value)">
+    <script>
+        async function getPopulation(name){
+            url = "https://jsonmock.hackerrank.com/api/countries/search?name="+name;
+            let response = await fetch(url);
+            let data = await response.json();
+            console.log(data)
+        }
+    </script>
+</body>
+</html>
